@@ -1,0 +1,5 @@
+openai
+langchain
+pypdf
+sentence-transformers
+chromadb
