@@ -1,0 +1,9 @@
+# Django
+Django
+djangorestframework
+django-filter
+djangorestframework-simplejwt
+# DB
+mysqlclient
+# Security
+python-dotenv
