@@ -1,8 +1,17 @@
 from django.contrib import admin
 from django.urls import path
-from .views import UserList, UserDetail
+from .views import (
+    UserSignupView,
+    UserLoginView, 
+    UserRefreshView,
+    UserDetailView, 
+    UserListView
+)
 
 urlpatterns = [
-    path("user_list/", UserList.as_view()),
-    path("user/<int:pk>", UserDetail.as_view())
+    path("signup/", UserSignupView.as_view()),
+    path("login/", UserLoginView.as_view()),
+    path("refresh/", UserRefreshView.as_view()),
+    path("detail/<int:pk>", UserDetailView.as_view()),
+    path("list/", UserListView.as_view())
 ]
